@@ -1,0 +1,49 @@
+{
+  "name": "@requestnetwork/prototype-estimator",
+  "version": "1.14.0",
+  "private": true,
+  "description": "Tool to estimate size and throughput of v2 system.",
+  "keywords": [
+    "requestnetwork",
+    "estimator"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RequestNetwork/requestNetwork.git"
+  },
+  "homepage": "https://github.com/RequestNetwork/requestNetwork/tree/master/packages/prototype-estimator",
+  "bugs": {
+    "url": "https://github.com/RequestNetwork/requestNetwork/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc -b",
+    "ganache-blocktime15": "ganache-cli -l 90000000 -p 8545 --blockTime 15 -m \"candy maple cake sugar pudding cream honey rich smooth crumble sweet treat\"",
+    "start": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "@requestnetwork/advanced-logic": "0.20.0",
+    "@requestnetwork/data-access": "0.16.0",
+    "@requestnetwork/epk-signature": "0.5.18",
+    "@requestnetwork/ethereum-storage": "0.15.0",
+    "@requestnetwork/multi-format": "0.8.0",
+    "@requestnetwork/request-client.js": "0.23.0",
+    "@requestnetwork/request-logic": "0.19.0",
+    "@requestnetwork/request-node": "0.16.0",
+    "@requestnetwork/transaction-manager": "0.19.0",
+    "@requestnetwork/types": "0.22.0",
+    "@requestnetwork/utils": "0.21.0",
+    "benchmark": "2.1.4",
+    "simple-statistics": "7.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "14.6.4",
+    "prettier": "2.1.1",
+    "ts-node": "9.0.0",
+    "typescript": "4.0.2"
+  }
+}

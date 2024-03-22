@@ -1,0 +1,19 @@
+{
+  "extends": "../../tsconfig",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "test"
+  },
+  "references": [
+    { "path": "../advanced-logic" },
+    { "path": "../request-client.js" },
+    { "path": "../data-access" },
+    { "path": "../ethereum-storage" },
+    { "path": "../epk-decryption" },
+    { "path": "../epk-signature" },
+    { "path": "../multi-format" },
+    { "path": "../request-logic" },
+    { "path": "../transaction-manager" },
+    { "path": "../types" }
+  ]
+}
